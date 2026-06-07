@@ -1,0 +1,54 @@
+# =====================================================================
+# MG74 — dépôt des supports pour les étudiants
+# =====================================================================
+
+# ---- Artefacts de compilation LaTeX (jamais versionnés) ----
+*.aux
+*.log
+*.out
+*.toc
+*.nav
+*.snm
+*.vrb
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# ---- Système / divers ----
+.DS_Store
+*.db
+
+# =====================================================================
+# CONTROLE DE DISTRIBUTION
+# Au DEBUT de la seance, on ne pousse QUE :
+#   - scenario1/neo4j/build.cypher
+#   - scenario2/neo4j/build.cypher
+#   - les cahiers des charges (PDF) des scenarios 1, 2 et 3
+#   - get_started/README.md
+# Tout le reste ci-dessous est ignore POUR L'INSTANT et sera pousse
+# EN FIN de seance (il suffira de retirer les lignes correspondantes),
+# SAUF le corrige du scenario 3 = INSTRUCTEUR uniquement (jamais distribue).
+# =====================================================================
+
+# Sources LaTeX (on distribue les PDF, pas le source)
+*.tex
+
+# Tous les PDF... sauf les cahiers des charges
+*.pdf
+!scenario1/cahier_des_charges.pdf
+!scenario2/cahier_des_charges.pdf
+!scenario3/cahier_des_charges.pdf
+
+# Runbooks Neo4j (guides instructeur / corriges de requetes)
+**/runbook.md
+
+# SQL du scenario 1 (schema, seed, requetes, ERD)
+scenario1/sql/
+
+# Corrige du scenario 3 — INSTRUCTEUR UNIQUEMENT (ne jamais distribuer)
+scenario3/*
+#!scenario3/cahier_des_charges.pdf
+scenario3/corrige/
+
+# Inputs de build non distribues au depart (logos, anciens supports)
+assets/
