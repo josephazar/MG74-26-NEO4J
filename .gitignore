@@ -39,15 +39,16 @@
 !scenario1/slides.pdf
 !scenario2/cahier_des_charges.pdf
 !scenario3/cahier_des_charges.pdf
-
+!scenario2/slides.pdf
 # Runbooks Neo4j (guides instructeur / corriges de requetes)
 **/runbook.md
 !scenario1/neo4j/runbook.md
+!scenario2/neo4j/runbook.md
 # SQL du scenario 1 (schema, seed, requetes, ERD)
 #scenario1/sql/
 
 # Corrige du scenario 3 — INSTRUCTEUR UNIQUEMENT (ne jamais distribuer)
-scenario3/*
+#scenario3/*
 #!scenario3/cahier_des_charges.pdf
 scenario3/corrige/
 
